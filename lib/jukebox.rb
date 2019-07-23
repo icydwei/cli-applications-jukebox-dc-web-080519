@@ -51,7 +51,7 @@ def run
   help
   puts "Please enter a command:"
   input = gets.chomp
-  while input != "exit"
+  while input != "exit" do
     if input == "help"
       help
       puts "Please enter a command:"
