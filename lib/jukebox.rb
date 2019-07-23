@@ -54,19 +54,15 @@ def run
   while input != "exit" 
     if input == "help"
       help
-      puts "Please enter a command:"
-      input = gets.chomp
     end
     if input == "list"
       list(songs)
-      puts "Please enter a command:"
-      input = gets.chomp
     end 
     if input == "play"
       play(songs)
-      puts "Please enter a command:"
-      input = gets.chomp
     end
+    puts "Please enter a command:"
+    input = gets.chomp
   end
   if input == "exit"
     exit_jukebox
