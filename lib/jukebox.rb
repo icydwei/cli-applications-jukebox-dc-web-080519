@@ -1,3 +1,4 @@
+require 'pry'
 # Add your code here
 
 songs = [
@@ -34,7 +35,7 @@ def play(songs)
       puts "Playing #{song}"
       break
     end
-    if input == (index+1)
+    if input == (index.to_i + 1)
       puts "Playing #{song}"
       break
     end
