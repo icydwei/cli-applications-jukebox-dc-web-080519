@@ -51,7 +51,7 @@ def run
   help
   puts "Please enter a command:"
   input = gets.chomp
-  while input != "exit" 
+  loop do
     if input == "help"
       help
     end
@@ -61,6 +61,9 @@ def run
     if input == "play"
       play(songs)
     end
+    if input == "exit"
+      exit_jukebox
+      
     puts "Please enter a command:"
     input = gets.chomp
   end
