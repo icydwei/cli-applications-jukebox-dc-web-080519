@@ -35,7 +35,7 @@ def play(songs)
       puts "Playing #{song}"
       break
     end
-    if input == (index.to_i + 1)
+    if input.to_i == (index.to_i + 1)
       puts "Playing #{song}"
       break
     end
